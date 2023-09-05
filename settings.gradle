@@ -1,0 +1,5 @@
+include ':splashview'
+include ':googleadmanager'
+include ':app'
+
+rootProject.name = "Mandh Android Common Libraries"

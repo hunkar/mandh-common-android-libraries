@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SplashView</string>
+    <string name="splash_text">Application is starting, please wait...</string>
+</resources>

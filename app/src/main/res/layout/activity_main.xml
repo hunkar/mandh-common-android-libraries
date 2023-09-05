@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:splashview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/show_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/click_for_ad" />
+
+    <Button
+        android:id="@+id/show_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_ad"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/click_for_splash" />
+
+    <Button
+        android:id="@+id/show_custom_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_splash"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/click_for_custom_splash" />
+
+    <com.mandh.googleadmanager.BannerView
+        android:id="@+id/mandh_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.mandh.splashview.SplashView
+        android:id="@+id/splash_view_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.mandh.splashview.SplashView
+        android:id="@+id/splash_view_with_custom_color_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        splashview:backgroundColor="@color/purple_700"
+        splashview:color="@color/white"
+        splashview:text="@string/custom_splash_text"
+        splashview:duration="10000"
+        />
+</RelativeLayout>
